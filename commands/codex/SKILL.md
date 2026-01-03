@@ -1,6 +1,6 @@
 ---
 description: Delegate coding tasks to OpenAI Codex CLI with YOLO mode for autonomous execution
-argument-hint: <task> [--mode=yolo|auto|safe] [--timeout=300]
+argument-hint: <task> [--mode=yolo|auto|safe] [--timeout=1800]
 allowed-tools: Bash, Read, Write, Edit, Grep, Glob
 user-invocable: true
 ---
@@ -19,7 +19,7 @@ Delegate coding tasks to OpenAI's Codex CLI with configurable execution modes in
 - `--mode=yolo` - YOLO mode: No approvals, no sandbox (use in hardened environments only)
 - `--mode=auto` - Full auto mode: Workspace write access, minimal interaction (default)
 - `--mode=safe` - Safe mode: Requires approval for each action
-- `--timeout=<seconds>` - Execution timeout (default: 300)
+- `--timeout=<seconds>` - Execution timeout (default: 1800)
 - `--add-dir=<path>` - Additional directory for Codex to access
 
 ### Examples
@@ -77,12 +77,12 @@ Parse the user's arguments to determine:
 
 1. **Task Description** - The coding task to delegate to Codex
 2. **Execution Mode** - yolo, auto, or safe (default: auto)
-3. **Timeout** - Maximum execution time (default: 300 seconds)
+3. **Timeout** - Maximum execution time (default: 1800 seconds)
 4. **Additional Options** - Extra directories, model preferences, etc.
 
 **Argument Parsing:**
 - Extract `--mode=<value>` if present, default to `auto`
-- Extract `--timeout=<value>` if present, default to `300`
+- Extract `--timeout=<value>` if present, default to `1800`
 - Extract `--add-dir=<path>` if present
 - Remaining text is the task description
 

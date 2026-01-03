@@ -31,7 +31,7 @@
     {
       "name": "codex",
       "description": "Delegate coding tasks to OpenAI Codex CLI",
-      "usage": "/codex <task> [--mode=yolo|auto|safe] [--timeout=300]",
+      "usage": "/codex <task> [--mode=yolo|auto|safe] [--timeout=1800]",
       "examples": [
         "/codex Fix the bug in src/api.ts",
         "/codex --mode=yolo Implement user authentication",

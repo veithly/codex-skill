@@ -44,7 +44,7 @@
     "codex": {
       "file": "commands/codex/SKILL.md",
       "description": "Delegate coding tasks to OpenAI Codex CLI",
-      "usage": "/codex <task> [--mode=yolo|auto|safe] [--timeout=300]"
+      "usage": "/codex <task> [--mode=yolo|auto|safe] [--timeout=1800]"
     }
   },
   "agents": {

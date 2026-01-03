@@ -71,7 +71,7 @@ Before using the plugin, ensure you have:
 | Option | Description | Default |
 |--------|-------------|---------|
 | `--mode=<mode>` | Execution mode: `yolo`, `auto`, `safe` | `auto` |
-| `--timeout=<seconds>` | Maximum execution time | `300` |
+| `--timeout=<seconds>` | Maximum execution time | `1800` |
 | `--add-dir=<path>` | Additional directory for Codex to access | - |
 
 ## Execution Modes

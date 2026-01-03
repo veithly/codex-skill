@@ -8,7 +8,7 @@
 # Arguments:
 #   task      The coding task to send to Codex (required)
 #   mode      Execution mode: yolo, auto (default), safe
-#   timeout   Maximum execution time in seconds (default: 300)
+#   timeout   Maximum execution time in seconds (default: 1800)
 #   add-dir   Additional directory to grant Codex access to
 #
 # Examples:
@@ -30,7 +30,7 @@ NC='\033[0m'
 # Parse arguments
 TASK="${1:-}"
 MODE="${2:-auto}"
-TIMEOUT="${3:-300}"
+TIMEOUT="${3:-1800}"
 ADD_DIR="${4:-}"
 
 # Validate task

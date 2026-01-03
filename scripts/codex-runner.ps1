@@ -9,7 +9,7 @@
 .PARAMETER Mode
     Execution mode: 'yolo', 'auto' (default), or 'safe'
 .PARAMETER Timeout
-    Maximum execution time in seconds (default: 300)
+    Maximum execution time in seconds (default: 1800)
 .PARAMETER AddDir
     Additional directory to grant Codex access to
 .EXAMPLE
@@ -27,7 +27,7 @@ param(
     [string]$Mode = 'auto',
 
     [Parameter(Mandatory=$false)]
-    [int]$Timeout = 300,
+    [int]$Timeout = 1800,
 
     [Parameter(Mandatory=$false)]
     [string]$AddDir = ""
