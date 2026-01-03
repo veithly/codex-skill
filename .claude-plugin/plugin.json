@@ -1,0 +1,56 @@
+{
+  "name": "codex",
+  "description": "Delegate coding tasks to OpenAI Codex CLI with configurable execution modes including YOLO mode for fully autonomous operation",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ricky Wang",
+    "email": "veithly@github.com"
+  },
+  "homepage": "https://github.com/veithly/codex-skill",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veithly/codex-skill.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "openai",
+    "automation",
+    "coding",
+    "yolo-mode",
+    "ai-assistant",
+    "claude-code"
+  ],
+  "category": "development",
+  "engines": {
+    "claude-code": ">=1.0.0",
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cli": {
+      "codex": {
+        "install": "npm install -g @openai/codex",
+        "version": ">=0.65.0"
+      }
+    },
+    "env": {
+      "OPENAI_API_KEY": {
+        "required": true,
+        "description": "OpenAI API key for Codex CLI authentication"
+      }
+    }
+  },
+  "commands": {
+    "codex": {
+      "file": "commands/codex/SKILL.md",
+      "description": "Delegate coding tasks to OpenAI Codex CLI",
+      "usage": "/codex <task> [--mode=yolo|auto|safe] [--timeout=300]"
+    }
+  },
+  "agents": {
+    "codex": {
+      "file": "agents/codex.md",
+      "description": "OpenAI Codex CLI integration agent for automated coding tasks"
+    }
+  }
+}

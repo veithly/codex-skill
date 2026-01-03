@@ -1,0 +1,47 @@
+{
+  "name": "codex-skill",
+  "owner": {
+    "name": "Ricky Wang",
+    "email": "veithly@github.com"
+  },
+  "metadata": {
+    "description": "OpenAI Codex CLI integration for Claude Code with YOLO mode support",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "codex",
+      "source": ".",
+      "description": "Delegate coding tasks to OpenAI Codex CLI with YOLO, Auto, and Safe execution modes",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ricky Wang"
+      },
+      "homepage": "https://github.com/veithly/codex-skill",
+      "repository": "https://github.com/veithly/codex-skill",
+      "license": "MIT",
+      "keywords": [
+        "codex",
+        "openai",
+        "automation",
+        "coding",
+        "yolo",
+        "ai-assistant"
+      ],
+      "category": "development",
+      "tags": [
+        "codex",
+        "openai",
+        "ai-coding",
+        "automation",
+        "development-tools"
+      ],
+      "commands": [
+        "commands/codex"
+      ],
+      "agents": [
+        "agents/codex.md"
+      ]
+    }
+  ]
+}

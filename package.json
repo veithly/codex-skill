@@ -4,6 +4,7 @@
   "description": "Delegate coding tasks to OpenAI Codex CLI with YOLO mode for autonomous execution in Claude Code",
   "keywords": [
     "claude-code",
+    "claude-code-plugin",
     "claude-skill",
     "codex",
     "openai",
@@ -11,24 +12,24 @@
     "automation",
     "yolo-mode"
   ],
-  "homepage": "https://github.com/RickyWang/codex-skill#readme",
+  "homepage": "https://github.com/veithly/codex-skill#readme",
   "bugs": {
-    "url": "https://github.com/RickyWang/codex-skill/issues"
+    "url": "https://github.com/veithly/codex-skill/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RickyWang/codex-skill.git"
+    "url": "git+https://github.com/veithly/codex-skill.git"
   },
   "license": "MIT",
   "author": "Ricky Wang",
   "type": "module",
   "files": [
-    "SKILL.md",
-    "agent.md",
-    "reference.md",
-    "REQUIREMENTS.md",
+    ".claude-plugin/",
+    "commands/",
+    "agents/",
     "scripts/",
     "examples/",
+    "REQUIREMENTS.md",
     "LICENSE",
     "README.md"
   ],
