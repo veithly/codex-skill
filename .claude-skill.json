@@ -1,0 +1,117 @@
+{
+  "$schema": "https://claude.ai/schemas/skill-manifest.json",
+  "name": "codex",
+  "displayName": "Codex CLI Integration",
+  "version": "1.0.0",
+  "description": "Delegate coding tasks to OpenAI Codex CLI with configurable execution modes including YOLO mode for fully autonomous operation.",
+  "author": {
+    "name": "Ricky Wang",
+    "url": "https://github.com/RickyWang"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RickyWang/codex-skill"
+  },
+  "license": "MIT",
+  "categories": [
+    "development",
+    "automation",
+    "ai-tools"
+  ],
+  "tags": [
+    "codex",
+    "openai",
+    "coding",
+    "automation",
+    "yolo",
+    "ai-assistant"
+  ],
+  "icon": "🤖",
+  "commands": [
+    {
+      "name": "codex",
+      "description": "Delegate coding tasks to OpenAI Codex CLI",
+      "usage": "/codex <task> [--mode=yolo|auto|safe] [--timeout=300]",
+      "examples": [
+        "/codex Fix the bug in src/api.ts",
+        "/codex --mode=yolo Implement user authentication",
+        "/codex --mode=safe Refactor the database module"
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "name": "codex",
+      "description": "OpenAI Codex CLI integration agent for automated coding tasks"
+    }
+  ],
+  "installation": {
+    "commands": {
+      "source": "SKILL.md",
+      "destination": "~/.claude/commands/codex/SKILL.md"
+    },
+    "agents": {
+      "source": "agent.md",
+      "destination": "~/.claude/agents/codex.md"
+    },
+    "scripts": [
+      {
+        "source": "scripts/codex-runner.sh",
+        "destination": "~/.claude/scripts/codex-runner.sh",
+        "platforms": ["linux", "darwin"]
+      },
+      {
+        "source": "scripts/codex-runner.ps1",
+        "destination": "~/.claude/scripts/codex-runner.ps1",
+        "platforms": ["win32"]
+      },
+      {
+        "source": "scripts/codex-yolo.sh",
+        "destination": "~/.claude/scripts/codex-yolo.sh",
+        "platforms": ["linux", "darwin"]
+      },
+      {
+        "source": "scripts/codex-yolo.cmd",
+        "destination": "~/.claude/scripts/codex-yolo.cmd",
+        "platforms": ["win32"]
+      }
+    ],
+    "references": [
+      {
+        "source": "reference.md",
+        "destination": "~/.claude/commands/codex/reference.md"
+      }
+    ]
+  },
+  "requirements": {
+    "claude-code": ">=1.0.0",
+    "node": ">=18.0.0",
+    "dependencies": [
+      {
+        "name": "@openai/codex",
+        "type": "npm",
+        "global": true,
+        "optional": false
+      }
+    ],
+    "environment": [
+      {
+        "name": "OPENAI_API_KEY",
+        "required": true,
+        "description": "OpenAI API key for Codex CLI authentication"
+      }
+    ]
+  },
+  "platforms": ["win32", "darwin", "linux"],
+  "features": [
+    "Multiple execution modes (YOLO, Auto, Safe)",
+    "Cross-platform support (Windows, macOS, Linux)",
+    "Git integration for change tracking",
+    "Non-interactive execution with codex exec",
+    "Helper scripts for quick access"
+  ],
+  "screenshots": [],
+  "changelog": {
+    "1.0.0": "Initial release with YOLO, Auto, and Safe modes"
+  }
+}

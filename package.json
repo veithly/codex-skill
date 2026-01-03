@@ -1,0 +1,62 @@
+{
+  "name": "@anthropic-skills/codex",
+  "version": "1.0.0",
+  "description": "Delegate coding tasks to OpenAI Codex CLI with YOLO mode for autonomous execution in Claude Code",
+  "keywords": [
+    "claude-code",
+    "claude-skill",
+    "codex",
+    "openai",
+    "ai-coding",
+    "automation",
+    "yolo-mode"
+  ],
+  "homepage": "https://github.com/RickyWang/codex-skill#readme",
+  "bugs": {
+    "url": "https://github.com/RickyWang/codex-skill/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickyWang/codex-skill.git"
+  },
+  "license": "MIT",
+  "author": "Ricky Wang",
+  "type": "module",
+  "files": [
+    "SKILL.md",
+    "agent.md",
+    "reference.md",
+    "REQUIREMENTS.md",
+    "scripts/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "install:skill": "node scripts/npm-install.js",
+    "postinstall": "node scripts/npm-install.js",
+    "uninstall": "node scripts/npm-uninstall.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "peerDependencies": {
+    "@openai/codex": ">=0.65.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "claude-skill": {
+    "name": "codex",
+    "displayName": "Codex CLI Integration",
+    "description": "Delegate coding tasks to OpenAI Codex CLI with YOLO mode",
+    "version": "1.0.0",
+    "author": "Ricky Wang",
+    "category": "development",
+    "tags": ["codex", "openai", "automation", "coding"],
+    "commands": ["/codex"],
+    "agents": ["codex"],
+    "requires": {
+      "cli": ["codex"],
+      "env": ["OPENAI_API_KEY"]
+    }
+  }
+}

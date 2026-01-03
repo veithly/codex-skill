@@ -1,0 +1,36 @@
+# Codex CLI Configuration
+# Location: ~/.codex/config.toml
+#
+# This file configures default behavior for the Codex CLI.
+
+# Default model to use
+model = "gpt-5.2-codex"
+
+# Default sandbox level
+# Options: "read-only", "workspace-write", "danger-full-access"
+sandbox = "workspace-write"
+
+# Reasoning effort level
+# Options: "low", "medium", "high"
+reasoning_effort = "high"
+
+# Custom instructions for Codex
+# These are included in every prompt to guide Codex's behavior
+instructions = """
+Follow these guidelines:
+- Write clean, readable code with meaningful variable names
+- Add comments for complex logic
+- Follow existing code patterns and conventions
+- Include error handling where appropriate
+- Write tests for new functionality when requested
+"""
+
+# Shell environment policy
+[shell_environment_policy]
+# Options: "all", "none", or list of specific variables
+inherit = "all"
+
+# Feature flags
+[features]
+# Enable experimental features as needed
+# vision = true

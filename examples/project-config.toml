@@ -1,0 +1,42 @@
+# Project-Level Codex Configuration
+# Location: <project-root>/codex.toml
+#
+# This file configures Codex behavior for a specific project.
+# Settings here override the global ~/.codex/config.toml
+
+# Model selection (project may need specific capabilities)
+model = "gpt-5.2-codex"
+
+# Sandbox level for this project
+sandbox = "workspace-write"
+
+# Additional directories Codex can access
+# Useful for monorepos or shared libraries
+additional_dirs = [
+    # "../shared-libs",
+    # "../common-utils"
+]
+
+# Project-specific instructions
+instructions = """
+Project: Example TypeScript Application
+
+Code Standards:
+- Use TypeScript with strict mode enabled
+- Use functional components with React hooks
+- Follow the existing patterns in src/components/
+- Use Tailwind CSS for styling
+- Write unit tests using Jest and React Testing Library
+
+File Structure:
+- Components go in src/components/
+- API routes go in src/api/
+- Utilities go in src/utils/
+- Types go in src/types/
+
+Conventions:
+- Use named exports, not default exports
+- Use async/await, not callbacks or .then()
+- Use const by default, let only when needed
+- Add JSDoc comments for exported functions
+"""
