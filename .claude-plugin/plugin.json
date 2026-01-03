@@ -1,5 +1,5 @@
 {
-  "name": "codex",
+  "name": "rick",
   "description": "Delegate coding tasks to OpenAI Codex CLI with configurable execution modes including YOLO mode for fully autonomous operation",
   "version": "1.0.0",
   "author": {

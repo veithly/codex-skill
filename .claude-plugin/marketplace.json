@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "codex",
+      "name": "rick",
       "source": ".",
       "description": "Delegate coding tasks to OpenAI Codex CLI with YOLO, Auto, and Safe execution modes",
       "version": "1.0.0",

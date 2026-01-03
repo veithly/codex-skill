@@ -15,7 +15,7 @@ Delegate coding tasks to OpenAI's Codex CLI with configurable execution modes in
 /plugin marketplace add veithly/codex-skill
 
 # Install the plugin
-/plugin install codex@codex-skill
+/plugin install rick@codex-skill
 ```
 
 ### Prerequisites
