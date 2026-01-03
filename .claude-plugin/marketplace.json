@@ -37,7 +37,7 @@
         "development-tools"
       ],
       "commands": [
-        "commands/codex"
+        "skills/codex"
       ],
       "agents": [
         "agents/codex.md"

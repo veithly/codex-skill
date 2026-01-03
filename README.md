@@ -138,13 +138,13 @@ git clone https://github.com/veithly/codex-skill.git
 cd codex-skill
 
 # Create directories
-mkdir -p ~/.claude/commands/codex
+mkdir -p ~/.claude/skills/codex
 mkdir -p ~/.claude/agents
 mkdir -p ~/.claude/scripts
 
 # Copy files
-cp commands/codex/SKILL.md ~/.claude/commands/codex/
-cp commands/codex/reference.md ~/.claude/commands/codex/
+cp skills/codex/SKILL.md ~/.claude/skills/codex/
+cp skills/codex/reference.md ~/.claude/skills/codex/
 cp agents/codex.md ~/.claude/agents/
 ```
 
@@ -244,7 +244,7 @@ codex-skill/
 ├── .claude-plugin/
 │   ├── marketplace.json    # Marketplace definition
 │   └── plugin.json         # Plugin manifest
-├── commands/
+├── skills/
 │   └── codex/
 │       ├── SKILL.md        # Main skill definition
 │       └── reference.md    # CLI quick reference

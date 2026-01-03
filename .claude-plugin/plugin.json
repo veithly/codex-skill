@@ -42,7 +42,7 @@
   },
   "commands": {
     "codex": {
-      "file": "commands/codex/SKILL.md",
+      "file": "skills/codex/SKILL.md",
       "description": "Delegate coding tasks to OpenAI Codex CLI",
       "usage": "/codex <task> [--mode=yolo|auto|safe] [--timeout=1800]"
     }

@@ -76,7 +76,7 @@ $env:OPENAI_API_KEY = "sk-..."
 
 ```
 ~/.claude/
-├── commands/
+├── skills/
 │   └── codex/
 │       ├── SKILL.md        # Required
 │       └── reference.md    # Optional

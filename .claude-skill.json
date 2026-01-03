@@ -48,7 +48,7 @@
   "installation": {
     "commands": {
       "source": "SKILL.md",
-      "destination": "~/.claude/commands/codex/SKILL.md"
+      "destination": "~/.claude/skills/codex/SKILL.md"
     },
     "agents": {
       "source": "agent.md",
@@ -79,7 +79,7 @@
     "references": [
       {
         "source": "reference.md",
-        "destination": "~/.claude/commands/codex/reference.md"
+        "destination": "~/.claude/skills/codex/reference.md"
       }
     ]
   },
